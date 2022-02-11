@@ -1,0 +1,6 @@
+framework module FZMSwiftSDK {
+  umbrella header "FZMSwiftSDK.h"
+
+  export *
+  module * { export * }
+}

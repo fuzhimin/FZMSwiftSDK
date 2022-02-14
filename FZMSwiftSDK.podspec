@@ -24,18 +24,11 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://github.com/fuzhimin/FZMSwiftSDK"
-
   spec.license      = { :type => "MIT", :file => "LICENSE"}
   spec.author       = { "fuzhimin" => "ron.fu@cdskysoft.com" }
   spec.platform     = :ios, "9.0"
-  
   spec.vendored_frameworks = 'FZMSDK.framework'
-    #https://github.com/fuzhimin/FZMSwiftSDK/archive/refs/heads/main.zip
-      #spec.source       = { :git => "https://github.com/fuzhimin/FZMSwiftSDK.git", :tag => "#{spec.version}" }
-      spec.source       = { :http => "https://github.com/fuzhimin/FZMSwiftSDK/archive/refs/heads/main.zip" }
-    spec.source_files  = "FZMSDK.framework/Headers/*.{h}"
-    spec.frameworks = 'UIKit', 'Foundation'
-  spec.module_name = 'FZMSDK'
-  
-
+  spec.platform     = :ios
+  spec.requires_arc = true
+  spec.frameworks = 'Foundation'
 end

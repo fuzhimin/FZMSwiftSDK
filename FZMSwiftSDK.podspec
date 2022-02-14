@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
 
   spec.license      = "MIT"
   spec.author             = { "fuzhimin" => "15184467065@163.com" }
-  spec.source       = { :http => "https://github.com/fuzhimin/FZMSwiftSDK.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/fuzhimin/FZMSwiftSDK.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -26,8 +26,10 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/fuzhimin/FZMSwiftSDK"
 
   spec.license      = { :type => "MIT", :file => "LICENSE"}
-  spec.author       = { "fzmfzs" => "15184467065@163.com" }
+  spec.author       = { "fuzhimin" => "ron.fu@cdskysoft.com" }
   spec.platform     = :ios, "9.0"
+  
+  spec.vendored_frameworks = 'FZMSDK.framework'
     
   spec.source       = { :git => "https://github.com/fuzhimin/FZMSwiftSDK.git", :tag => "#{spec.version}" }
     spec.source_files  = "FZMSDK.framework/Headers/*.{h}"

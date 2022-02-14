@@ -31,4 +31,5 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.requires_arc = true
   spec.frameworks = 'Foundation'
+    spec.source           = { :git => "https://github.com/fuzhimin/FZMSwiftSDK.git", :tag => s.version }
 end

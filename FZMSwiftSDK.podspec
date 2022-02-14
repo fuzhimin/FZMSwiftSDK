@@ -30,8 +30,9 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   
   spec.vendored_frameworks = 'FZMSDK.framework'
-    
-  spec.source       = { :git => "https://github.com/fuzhimin/FZMSwiftSDK.git", :tag => "#{spec.version}" }
+    #https://github.com/fuzhimin/FZMSwiftSDK/archive/refs/heads/main.zip
+      #spec.source       = { :git => "https://github.com/fuzhimin/FZMSwiftSDK.git", :tag => "#{spec.version}" }
+      spec.source       = { :http => "https://github.com/fuzhimin/FZMSwiftSDK/archive/refs/heads/main.zip" }
     spec.source_files  = "FZMSDK.framework/Headers/*.{h}"
     spec.frameworks = 'UIKit', 'Foundation'
   spec.module_name = 'FZMSDK'
